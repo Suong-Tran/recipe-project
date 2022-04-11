@@ -1,10 +1,10 @@
-FROM node:latest
+FROM node:17.3
 
 WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm instsall
+RUN npm install
 
 COPY . .
 
